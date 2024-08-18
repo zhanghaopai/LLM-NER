@@ -1,4 +1,8 @@
 #!/bin/bash
 
-mkdir model/oneke
+
+if [ ! -d "model/oneke" ]
+then
+  mkdir model/oneke
+fi
 modelscope download --model ZJUNLP/OneKE --local_dir model/oneke
